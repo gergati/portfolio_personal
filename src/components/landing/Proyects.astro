@@ -3,14 +3,14 @@ import proyects from '../../config/proyects.json'
 ---
 
 <section class="">
-    <h2 class="font-bold text-5xl my-8 text-center">Proyects</h2>
+    <h2 class="font-bold text-5xl my-8 text-center  text-black">Proyects</h2>
     {
         proyects.map(proyect => (
             <div class="flex flex-col mb-2 text-center md:text-left md:flex-row">
                 <div class="flex-1 p-4">
-                    <h2 class="font-bold text-2xl my-4">{proyect.title}</h2>
-                    <p class="my-2">{proyect.description}</p>
-                    <button class="bg-indigo-500 px-3 py-2 hover:bg-indigo-400">
+                    <h2 class="font-bold text-2xl my-4 text-black">{proyect.title}</h2>
+                    <p class="my-2  text-black">{proyect.description}</p>
+                    <button class="bg-indigo-500 px-3 py-2 hover:bg-indigo-400  text-black">
                         More info    
                     </button>
                 </div>
