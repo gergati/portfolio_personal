@@ -1,17 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
 // Components
-import Hero from "../components/landing/Hero.astro";
 import More from "../components/landing/More.astro";
 import Features from "../components/landing/Features.astro";
 import About from "../components/landing/About.astro";
 import Proyects from "../components/landing/Proyects.astro";
+import Header from "../components/landing/Header.astro";
+import Footer from "../components/landing/Footer.astro";
 ---
 
 <Layout title="German Gatica | Portfolio Personal">
-	<Hero />
-	<More />
-	<Features />
-	<About />
-	<Proyects />
+	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-100 dark:bg-neutral-950
+	bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+		<Header />
+		<More />
+		<Features />
+		<About />
+		<Proyects />
+		<Footer />
+	</div>
 </Layout>
