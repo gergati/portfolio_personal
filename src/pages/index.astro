@@ -9,15 +9,17 @@ import Header from "../components/landing/Header.astro";
 import Footer from "../components/landing/Footer.astro";
 ---
 
-<Layout title="German Gatica | Portfolio Personal">
-	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-100 dark:bg-neutral-950
+<Layout title="Portfolio de German Gatica - Desarrollador y Programador Web" description="Contrata a German Gatica, programador fullstack. Especializado en crear webs únicas">
+	<div
+		class="absolute top-0 bottom-0 z-[-2] min-h-screen min-w-full bg-neutral-100 dark:bg-neutral-950
 	bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-		<Header />
-		<More />
-		<Features />
-		<About />
-		<Proyects />
-		<Footer />
+	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+	>
 	</div>
+	<Header />
+	<More />
+	<Features />
+	<About />
+	<Proyects />
+	<Footer />
 </Layout>

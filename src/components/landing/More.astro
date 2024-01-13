@@ -1,56 +1,48 @@
 ---
+import React from '../icons/React.astro'
+import Node from '../icons/Node.astro'
+import Tailwind from '../icons/Tailwind.astro'
+import LogoAstro from '../icons/LogoAstro.astro'
+import MySql from '../icons/MySql.astro'
+import Mongo from '../icons/Mongo.astro'
+import Firebase from '../icons/Firebase.astro'
+import PostgreSQLIcon from '../icons/PostgreSQLIcon.astro'
 ---
 
-<section class="flex flex-col py-10 md:flew-row md:p-20 gap-y-10 dark:bg-[#0a0a0a]">
+<section class="flex flex-col py-10 md:mt-28 md:flew-row md:p-20 gap-y-10 ">
     <h2 class="md:text-5xl text-center font-medium">Tecnologias</h2>
-    <div class="grid grid-cols-2 gap-16 m-auto md:grid-cols-4 md:grid-rows-3">
+    <div class="grid grid-cols-3 gap-8 md:gap-16 m-auto md:grid-cols-4 md:grid-rows-3">
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/react.svg" alt="" />
-            </div>
+            <React class="size-20"/>
             <p class="text-center">React</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/node.svg" alt="" />
-            </div>
-            <p class="text-center">Node Js</p>
+            <Node class="size-20" />
+            <p class="text-center m-3">Node Js</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/tailwind.svg" alt="" />
-            </div>
-            <p class="text-center">Tailwind css</p>
+            <Tailwind class="size-20" />
+            <p class="text-center m-3">Tailwind css</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/astro.svg" alt="" />
-            </div>
-            <p class="text-center">Astro</p>
+            <LogoAstro class="size-20" />
+            <p class="text-center m-3">Astro</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/sql.svg" alt="" />
-            </div>
-            <p class="text-center">MySql</p>
+            <MySql class="size-20" />
+            <p class="text-center m-3">MySql</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/mongo.svg" alt="" />
-            </div>
-            <p class="text-center">Mongo DB</p>
+            <Mongo class="size-20" />
+            <p class="text-center m-3">Mongo DB</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/react.svg" alt="" />
-            </div>
-            <p class="text-center">React</p>
+            <Firebase class="size-20" />
+            <p class="text-center m-3">Firebase</p>
         </div>
         <div class="w-20 h-30">
-            <div class="w-20 h-20">
-                <img src="/images/react.svg" alt="" />
-            </div>
-            <p class="text-center">React</p>
+            <PostgreSQLIcon class="size-20" />
+            <p class="text-center m-3">PostgreSQL</p>
         </div>
     </div>
 </section>
