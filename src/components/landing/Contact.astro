@@ -1,0 +1,25 @@
+---
+import proyects from '../../config/proyects.json'
+---
+
+<section class="">
+    <h2 class="font-bold text-5xl my-8 text-center dark:text-white">Contacto</h2>
+    {
+        proyects.map(proyect => (
+            <div class="grid md:grid-cols-2 md:grid-rows-2 mb-2 text-center md:text-left md:mx-48 ">
+                <div class="">
+                    <h2 class="font-bold text-2xl my-4 dark:text-white">{proyect.title}</h2>
+                    <p class="my-2 dark:text-white">{proyect.description}</p>
+                    <button class="bg-indigo-500 rounded-lg px-3 py-2 hover:bg-indigo-400  dark:text-white">
+                        Más información
+                    </button>
+                </div>
+                <div class="flex-1">
+                    <img src={proyect.image} alt="imagen alternativa" class="w-72 m-auto">
+                </div>
+            </div>
+        ))
+    }
+</section>
+
+

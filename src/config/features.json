@@ -1,26 +1,42 @@
 [
     {
-        "title": "Encrypting",
-        "description": "Your data is encrypted and stored in a secure database"
+        "title": "API de Usuarios",
+        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
+        "url": "https://github.com/gergati/backend_upso",
+        "imagen": "/images/laptop.jpg",
+        "tecnologia1": "Python",
+        "tecnologia2": "Flask",
+        "tecnologia3": "MySql",
+        "tecnologia4": "PyJWT"
     },
     {
-        "title": "Open Source",
-        "description": "Your data is encrypted and stored in a secure database"
+        "title": "API de Usuarios",
+        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
+        "url": "https://github.com/gergati/backend_upso",
+        "imagen": "/images/laptop.jpg",
+        "tecnologia1": "Python",
+        "tecnologia2": "Flask",
+        "tecnologia3": "MySql",
+        "tecnologia4": "PyJWT"
     },
     {
-        "title": "Free",
-        "description": "Your data is encrypted and stored in a secure database"
+        "title": "API de Usuarios",
+        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
+        "url": "https://github.com/gergati/backend_upso",
+        "imagen": "/images/laptop.jpg",
+        "tecnologia1": "Python",
+        "tecnologia2": "Flask",
+        "tecnologia3": "MySql",
+        "tecnologia4": "PyJWT"
     },
     {
-        "title": "Fast",
-        "description": "Your data is encrypted and stored in a secure database"
-    },
-    {
-        "title": "Secure",
-        "description": "Your data is encrypted and stored in a secure database"
-    },
-    {
-        "title": "Cross Platform",
-        "description": "Your data is encrypted and stored in a secure database"
+        "title": "API de Usuarios",
+        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
+        "url": "https://github.com/gergati/backend_upso",
+        "imagen": "/images/laptop.jpg",
+        "tecnologia1": "Python",
+        "tecnologia2": "Flask",
+        "tecnologia3": "MySql",
+        "tecnologia4": "PyJWT"
     }
 ]

@@ -2,15 +2,56 @@
 import features from "../../config/features.json";
 ---
 
-<section class="">
-    <h1 class="text-center font-bold text-5xl mt-10 text-white">Proyectos</h1>
-
-    <div class="grid md:grid-cols-2 gap-4 p-4 md:m-52 md:mt-0">
+<section class="w-full lg:h-[1200px]">
+    <h1
+        class="text-center font-medium md:text-5xl text-3xl mt-10 dark:text-white"
+    >
+        Proyectos
+    </h1>
+    <div class="grid lg:grid-cols-2 lg:grid-rows-2 justify-center gap-4 p-4 lg:m-52 lg:mt-0">
         {
             features.map((feature) => (
-                <div class="bg-slate-800 p-10 rounded-xl ">
-                    <h2 class="text-2xl font-bold my-4 ">{feature.title}</h2>
-                    <p>{feature.description}</p>
+                <div class="transform transition duration-300 hover:scale-105 max-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href={feature.url} class="cursor-pointer">
+                        <img class="rounded-t-lg" src={feature.imagen} alt="Imagen sobre los proyectos" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                {feature.title}
+                            </h5>
+                        </a>
+                        <div class="pb-5">
+                            <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">{feature.tecnologia1}</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300">{feature.tecnologia2}</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">{feature.tecnologia3}</span>
+                            <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">{feature.tecnologia4}</span>
+                        </div>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            {feature.description}
+                        </p>
+                        <a
+                            href={feature.url}
+                            target="_blank"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                            Ver en Github
+                            <svg
+                                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                                aria-hidden="true"
+                                fill="none"
+                                viewBox="0 0 14 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                                />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             ))
         }
