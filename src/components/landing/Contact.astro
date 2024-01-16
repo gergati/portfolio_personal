@@ -1,25 +1,35 @@
 ---
-import proyects from '../../config/proyects.json'
+import Gmail from '../icons/Gmail.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
 ---
 
-<section class="">
-    <h2 class="font-bold text-5xl my-8 text-center dark:text-white">Contacto</h2>
-    {
-        proyects.map(proyect => (
-            <div class="grid md:grid-cols-2 md:grid-rows-2 mb-2 text-center md:text-left md:mx-48 ">
-                <div class="">
-                    <h2 class="font-bold text-2xl my-4 dark:text-white">{proyect.title}</h2>
-                    <p class="my-2 dark:text-white">{proyect.description}</p>
-                    <button class="bg-indigo-500 rounded-lg px-3 py-2 hover:bg-indigo-400  dark:text-white">
-                        Más información
-                    </button>
-                </div>
-                <div class="flex-1">
-                    <img src={proyect.image} alt="imagen alternativa" class="w-72 m-auto">
-                </div>
-            </div>
-        ))
-    }
+<section class="w-full">
+    <p class="font-medium text-3xl my-8 text-center dark:text-white md:mx-60">Tienes algún proyecto en mente? Hablemos. Tenemos dos formas de estar en contacto.</p>
+    <div class="flex flex-col items-center gap-8 mb-32">
+        <div class="flex gap-3">
+            <h4 class="text-center dark:text-white">Puedes enviarme un correo electrónico a esta dirección</h4>
+            <a
+                href="mailto:gergati1994@gmail.com?Subject=Te%20escribo%20por%20..."
+                target="_blank"
+                class="bg-blue-100 gap-3 hover:bg-blue-200 text-blue-800 text-xs font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center"
+            >
+                gergati1994@gmail.com
+                <Gmail class="size-5" />
+            </a> ó
+        </div>
+        <div class="flex gap-3">
+            <h4 class="text-center dark:text-white">puedes escribirme a mí</h4>
+            <a
+                href="https://www.linkedin.com/in/german-gatica-401671174/"
+                target="_blank"
+                class="bg-blue-100 gap-3 hover:bg-blue-200 text-blue-800 text-xs font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center"
+            >
+                LinkedIn
+                <LinkedIn class="size-5" />
+            </a>
+        </div>
+
+    </div>
 </section>
 
 
