@@ -2,24 +2,24 @@
 import features from "../../config/features.json";
 ---
 
-<section class="w-full lg:h-[1200px]">
-    <h1
+<section class="w-full md:h-[800px]" id="proyects">
+    <h2
         class="text-center font-medium md:text-5xl text-3xl mt-10 dark:text-white"
     >
         Proyectos
-    </h1>
-    <div class="grid lg:grid-cols-2 lg:grid-rows-2 justify-center gap-4 p-4 lg:m-52 lg:mt-0">
+    </h2>
+    <div class="grid md:grid-cols-2 md:grid-rows-2 justify-center gap-4 p-4 md:m-52 md:mt-0">
         {
             features.map((feature) => (
-                <div class="transform transition duration-300 hover:scale-105 max-w-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <a href={feature.url} class="cursor-pointer">
-                        <img class="rounded-t-lg" src={feature.imagen} alt="Imagen sobre los proyectos" />
+                <div class="transform transition duration-300 hover:scale-105 max-w-96 bg-white border border-gray-200 rounded-md shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href={feature.url} class="cursor-pointer" target="_blank">
+                        <img class="rounded-t-md w-full h-60 object-cover" src={feature.imagen} alt="Imagen sobre los proyectos" />
                     </a>
                     <div class="p-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href={feature.url} aria-label="Mostrar proyectos en Github">
+                            <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                 {feature.title}
-                            </h5>
+                            </h3>
                         </a>
                         <div class="pb-5">
                             <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">{feature.tecnologia1}</span>
@@ -33,7 +33,7 @@ import features from "../../config/features.json";
                         <a
                             href={feature.url}
                             target="_blank"
-                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
                             Ver en Github
                             <svg

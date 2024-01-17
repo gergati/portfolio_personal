@@ -3,32 +3,19 @@ import Gmail from '../icons/Gmail.astro'
 import LinkedIn from '../icons/LinkedIn.astro'
 ---
 
-<section class="w-full">
-    <p class="font-medium text-3xl my-8 text-center dark:text-white md:mx-60">Tienes algún proyecto en mente? Hablemos. Tenemos dos formas de estar en contacto.</p>
+<section class="w-full" id="contact">
+    <h3 class="font-medium md:text-3xl my-8 text-center dark:text-white text-2xl md:mx-50">Tienes algún proyecto en mente? Hablemos.</h3>
     <div class="flex flex-col items-center gap-8 mb-32">
-        <div class="flex gap-3">
-            <h4 class="text-center dark:text-white">Puedes enviarme un correo electrónico a esta dirección</h4>
+        <div class="flex flex-col gap-3">
             <a
                 href="mailto:gergati1994@gmail.com?Subject=Te%20escribo%20por%20..."
                 target="_blank"
-                class="bg-blue-100 gap-3 hover:bg-blue-200 text-blue-800 text-xs font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center"
+                class="bg-blue-100 gap-3 hover:bg-blue-200 text-blue-800 text-xs font-medium me-2 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center w-30 m-auto px-2"
             >
                 gergati1994@gmail.com
                 <Gmail class="size-5" />
-            </a> ó
-        </div>
-        <div class="flex gap-3">
-            <h4 class="text-center dark:text-white">puedes escribirme a mí</h4>
-            <a
-                href="https://www.linkedin.com/in/german-gatica-401671174/"
-                target="_blank"
-                class="bg-blue-100 gap-3 hover:bg-blue-200 text-blue-800 text-xs font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 inline-flex items-center justify-center"
-            >
-                LinkedIn
-                <LinkedIn class="size-5" />
-            </a>
-        </div>
-
+            </a> 
+                </div>
     </div>
 </section>
 

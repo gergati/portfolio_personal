@@ -3,40 +3,20 @@
         "title": "API de Usuarios",
         "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
         "url": "https://github.com/gergati/backend_upso",
-        "imagen": "/images/laptop.jpg",
+        "imagen": "/images/api.webp",
         "tecnologia1": "Python",
         "tecnologia2": "Flask",
         "tecnologia3": "MySql",
         "tecnologia4": "PyJWT"
     },
     {
-        "title": "API de Usuarios",
-        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
-        "url": "https://github.com/gergati/backend_upso",
-        "imagen": "/images/laptop.jpg",
-        "tecnologia1": "Python",
-        "tecnologia2": "Flask",
-        "tecnologia3": "MySql",
-        "tecnologia4": "PyJWT"
-    },
-    {
-        "title": "API de Usuarios",
-        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
-        "url": "https://github.com/gergati/backend_upso",
-        "imagen": "/images/laptop.jpg",
-        "tecnologia1": "Python",
-        "tecnologia2": "Flask",
-        "tecnologia3": "MySql",
-        "tecnologia4": "PyJWT"
-    },
-    {
-        "title": "API de Usuarios",
-        "description": "Realicé una API, donde mostramos clientes, usuarios, productos, ventas, etc",
-        "url": "https://github.com/gergati/backend_upso",
-        "imagen": "/images/laptop.jpg",
-        "tecnologia1": "Python",
-        "tecnologia2": "Flask",
-        "tecnologia3": "MySql",
-        "tecnologia4": "PyJWT"
+        "title": "Rick And Morty",
+        "description": "Personajes de Rick and Morty, realizamos paginación para mostrar todos los personajes de la saga",
+        "url": "https://github.com/gergati/RickAndMorty",
+        "imagen": "/images/rick.webp",
+        "tecnologia1": "React",
+        "tecnologia2": "JavaScript",
+        "tecnologia3": "Redux-Tooltik",
+        "tecnologia4": "Css"
     }
 ]
