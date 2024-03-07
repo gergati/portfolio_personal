@@ -18,10 +18,12 @@
                 d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path
                 d="M4 18l16 0"></path>
         </svg>
-        <nav class="hidden md:flex md:m-10 md:mr-48 md:content-between hover:opacity-80">
+        <nav
+            class="hidden md:flex md:m-10 md:mr-48 md:content-between hover:opacity-80"
+        >
             <a
                 href="/#about"
-                class="dark:text-white mx-10  font-semibold transition"
+                class="dark:text-white mx-10 font-semibold transition"
                 >Sobre mí</a
             >
             <a
@@ -29,22 +31,22 @@
                 class="dark:text-white mx-10 font-semibold transition"
                 >Proyectos</a
             >
-            
+
             <a
                 href="/#contact"
-                class="dark:text-white mx-10  font-semibold transition"
+                class="dark:text-white mx-10 font-semibold transition"
                 >Contacto</a
             >
         </nav>
     </div>
-    <div class="relative top-0 md:mx-32 mx-auto">    
+    <div class="relative top-0 md:mx-32 mx-auto">
         <div class="flex flex-col md:flex-row-reverse md:mx-36">
             <img
                 src="/images/me.webp"
                 alt="logo astro"
                 class="md:w-50 object-contain rounded-full md:h-50 md:mt-16 md:w-56 md:h-56 mt-7 m-auto top-5 w-32 h-32"
             />
-            <div class="md:w-[660px] relative ">
+            <div class="md:w-[660px] relative">
                 <div
                     class="w-[11rem] ml-20 md:ml-0 h-6 font-medium hover:bg-[#A9B5A6] bg-[#d6e1c2] flex rounded-lg absolute top-10"
                 >
@@ -52,6 +54,7 @@
                         href="https://www.linkedin.com/in/german-gatica-401671174/"
                         target="_blank"
                         class="text-gray-900 font-bold text-[12px] m-auto"
+                        id="pdf-container"
                     >
                         Disponible para trabajar
                     </a>
@@ -74,13 +77,14 @@
                     Hola, soy Germán. Desarrollador de Software
                 </h1>
                 <p
-                    class="my-4 text-1xl md:text-justify text-center m-auto dark:text-white "
+                    class="my-4 text-1xl md:text-justify text-center m-auto dark:text-white"
                 >
                     FullStack creando aplicaciones impresionantes
                 </p>
                 <button
                     class="md:mb-10 md:absolute md:-left-[8px] bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-cyan-500 via-blue-900 to-rose-800 flex-row justify-center text-white cursor-pointer focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-100 scale-90 gap-x-2 opacity-90 hover:opacity-100"
-                    >Descarga mi cv
+                    > <a href="/prueba.pdf" download="ggatica_cv">Descarga mi cv</a>
+                     
                     <svg
                         class="icon dark:text-white icon-tabler icon-tabler-download"
                         width="22"

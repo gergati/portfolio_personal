@@ -1,6 +1,6 @@
 ---
 // Supports weights 100-900
-import '@fontsource-variable/onest';
+import "@fontsource-variable/onest";
 interface Props {
 	title: string;
 	description: string;
@@ -14,29 +14,67 @@ const { description, title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/images/me.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta
+			name="title"
+			content="Portfolio de German Gatica - Desarrollador y Programador Web"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://germangatica.netlify.app/" />
+		<meta
+			property="og:title"
+			content="Portfolio de German Gatica - Desarrollador y Programador Web"
+		/>
+		<meta
+			property="og:description"
+			content="Contrata a German Gatica, programador fullstack. Especializado en crear webs únicas"
+		/>
+		<meta
+			property="og:image"
+			content="images/cv_github.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://germangatica.netlify.app/"
+		/>
+		<meta
+			property="twitter:title"
+			content="Portfolio de German Gatica - Desarrollador y Programador Web"
+		/>
+		<meta
+			property="twitter:description"
+			content="Contrata a German Gatica, programador fullstack. Especializado en crear webs únicas"
+		/>
+		<meta
+			property="twitter:image"
+			content="images/cv_github.png"
+		/>
 	</head>
 	<body class="dark:bg-[#0a0a0a]">
 		<main class="mx-auto">
 			<slot />
-		</main>		 
+		</main>
 	</body>
 </html>
 
 <style>
-	:root{
+	:root {
 		color-scheme: light dark;
 	}
-	html{
-		font-family: 'Onest Variable', sans-serif;
+	html {
+		font-family: "Onest Variable", sans-serif;
 		scroll-behavior: smooth;
 	}
 	@media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
+		html {
+			scroll-behavior: auto;
+		}
+	}
 </style>
-
