@@ -1,5 +1,5 @@
 
-![just-the-basics](/public//images/cv_github.png)
+![just-the-basics](/public/images/cv_github.png)
 
 ## 🚀 Project Structure
 
